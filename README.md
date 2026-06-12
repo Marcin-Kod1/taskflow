@@ -26,7 +26,7 @@ A simple task management web application built with Spring Boot, React and Postg
 
 ## Screenshot
 
-![TaskFlow](docs/screenshot.png)
+![TaskFlow](docs/image.png)
 
 ## Running the project
 
