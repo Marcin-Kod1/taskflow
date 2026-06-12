@@ -7,6 +7,7 @@ A simple task management web application built with Spring Boot, React and Postg
 * Create tasks
 * Delete tasks
 * Mark tasks as completed
+* Track creation date and time
 * Persistent storage with PostgreSQL
 
 ## Technologies

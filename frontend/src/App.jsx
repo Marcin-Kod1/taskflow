@@ -64,21 +64,30 @@ function App() {
 
       <ul>
         {tasks.map((task) => (
-          <li key={task.id}>
-            <span
+          <li
+            key={task.id}
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              marginBottom: "10px",
+            }}
+          >
+            <div
               style={{
-                textDecoration: task.completed ? "line-through" : "none",
                 cursor: "pointer",
+                textDecoration: task.completed ? "line-through" : "none",
               }}
               onClick={() => toggleTask(task.id)}
             >
-              {task.title}
-            </span>
+              <div>{task.title}</div>
 
-            <button
-              onClick={() => deleteTask(task.id)}
-              style={{ marginLeft: 10 }}
-            >
+              <small style={{ color: "#666" }}>
+                {new Date(task.createdAt).toLocaleString()}
+              </small>
+            </div>
+
+            <button onClick={() => deleteTask(task.id)}>
               Usuń
             </button>
           </li>
